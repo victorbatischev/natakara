@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><header>
+    <p id="logo"><a href="../ja/about/index.html"><img src="../common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></a> </p>
+    <ul id="langIcon">
+    <li><a href="http://blog.natakara.net/"><img src="http://natakara.net/common/images/icon_blog.gif" width="30" height="20" alt="English to page"/></a></li>
+    <li lang="en"><a href="http://natakara.net/about/index.html"><img src="http://natakara.net/common/images/icon_en.gif" width="30" height="20" alt="English to page"/></a></li>
+    <li lang="ru"><img src="http://natakara.net/common/images/icon_ru.gif" width="30" height="20" alt="Для российского странице"/></li>
+    <li lang="ja"><a href="http://natakara.net/ja/about/index.html"><img src="http://natakara.net/common/images/icon_ja.gif" width="30" height="20" alt="日本語ページへ"/></a></li>
+    </ul>
+    <nav>
+      <ul>
+        <li><a href="../about/index.html"><img src="../common/images/gnav01.gif" width="172" height="51" alt="ナタカラピラティスとは"/></a></li>
+        <li><a href="../plan/index.html"><img src="../common/images/gnav02.gif" width="160" height="51" alt="入会案内/料金プラン"/></a></li>
+        <li><a href="../faq/index.html"><img src="../common/images/gnav03.gif" width="97" height="51" alt="よくある質問"/></a></li>
+        <li><a href="../studio/index.html"><img src="../common/images/gnav04.gif" width="131" height="51" alt="スタジオについて"/></a></li>
+        <li><a href="../lesson/index.html"><img src="../common/images/gnav05.gif" width="98" height="51" alt="レッスン紹介"/></a></li>
+        <li><a href="../contact/index.html"><img src="../common/images/gnav06.gif" width="100" height="51" alt="お問い合わせ"/></a></li>
+      </ul>
+    </nav>
+  </header>

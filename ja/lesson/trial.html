@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<title>見学と体験会 / NATAKARA PILATES</title>
+<meta http-equiv="Content-Script-type" content="text/javascript">
+<meta http-equiv="Content-Style-type" content="text/css">
+<meta name="keywords" content="NATAKARA PILATES,ナタカラ,ピラティス,見学,体験会 " />
+<meta name="description" content="NATAKARA PILATESの見学と体験会 " />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+<!-- OGP  -->
+<meta property="og:title" content="NATAKARA PILATESの見学と体験会">
+<meta property="og:description" content="NATAKARA PILATESの見学と体験会">
+<meta property="og:type" content="website">
+<!-- / OGP -->
+<link rel="stylesheet" href="../../common/css/style.css" media="screen, projection, tv, print">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var topBtn = $('#pageTop');	
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 150) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	//スクロールしてトップ
+    topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+    });
+	$('a[href^=#]').click(function(){
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+     });
+});
+</script>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528db8f5461eb7aa"></script>
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left',
+      'numPreferredServices' : 6
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'natakara.pilates'}
+      ]
+    }   
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53892-34', 'natakara.net');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="container">
+  <header>
+    <p id="logo"><a href="http://natakara.net/about/"><img src="../common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></a></p>
+    <nav>
+      <ul>
+        <li><a href="../about/index.html"><img src="../common/images/gnav01.gif" width="172" height="51" alt="ナタカラピラティスとは"/></a></li>
+        <li><a href="../plan/index.html"><img src="../common/images/gnav02.gif" width="160" height="51" alt="入会案内/料金プラン"/></a></li>
+        <li><a href="../faq/index.html"><img src="../common/images/gnav03.gif" width="97" height="51" alt="よくある質問"/></a></li>
+        <li><a href="../studio/index.html"><img src="../common/images/gnav04.gif" width="131" height="51" alt="スタジオについて"/></a></li>
+        <li><a href="index.html"><img src="../common/images/gnav05.gif" width="98" height="51" alt="レッスン紹介"/></a></li>
+        <li><a href="../contact/index.html"><img src="../common/images/gnav06.gif" width="100" height="51" alt="お問い合わせ"/></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="mainArea">
+    <div id="mainContent">
+      <h1>見学/体験会</h1>
+      <section class="contents">
+        <div class="boxSet">
+          <div class="boxLeft350">
+            <p align="left">Natakara Pilatesでは見学/体験レッスンなどのトライアルをご用意してております。<br>
+              体験レッスンについては1回60分のグループレッスン(1,500円/初回)での開催となります。 <br>
+              気になってはいるけども、いきなり入会は気が引ける、不安な方に最適です。ご不明な点などはお気軽にご連絡ください。 </p>
+            <p align="left">体験レッスン参加には、事前にご予約をお願いしております。<br>
+              また、見学のみのご相談もお気軽にご連絡ください。</p>
+          </div>
+          <div class="boxRight310">
+            <p><img src="images/img_trial_01.jpg" width="310" height="207" alt=""/></p>
+          </div>
+        </div>
+        <div id="entry clear">
+          <h2>体験のご利用方法</h2>
+          <p>以下のよりフォームからご予約いただくか、直接お電話にてご予約いただき、直接スタジオにて料金お支払いのうえ、体験をおりようください。</p>
+          <p class="btn"><a href="../contact/entry.html">ご予約について</a></p>
+        </div>
+      </section>
+    </div><!-- #BeginLibraryItem "/Library/subContent_ja.lbi" --><div id="subContent">
+      <div class="contents">
+        <p><a href="http://blog.natakara.net/archive"><img src="../../common/images/banner_whatsnew.jpg" width="240" height="250" alt=" What's New"/></a></p>
+        <p><a href="../contact/entry.html"><img src="../../common/images/banner_trial_ja.jpg" width="240" height="107" alt="ピラティス見学会/体験会"/></a></p>
+        <p><a href="../studio/index.html"><img src="../../common/images/banner_studio.jpg" width="241" height="100" alt="ピラティススタジオ"/></a></p>
+      </div>
+      <div class="contents" id="facebook">
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fnatakara.pilates&amp;width=240&amp;height=500&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=272395409456858" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:500px;" allowtransparency="true"></iframe>
+      </div>
+    </div><!-- #EndLibraryItem --></div>
+  <p id="pageTop"><a href="#container">ページの先頭へ</a></p>
+</div>
+<footer>
+  <div id="fooerBody">
+    <div class="vcard">
+      <p class="fn"><a href="/"><img src="../common/images/logo_footer.gif" width="184" height="74" alt="ナタカラ ピラティス - Natakara Pilates"/></a></p>
+      <p class="adr"><span class="postal-code">〒154-0004</span><br>
+        <span class="region">東京都</span><span class="locality">世田谷区</span><span class="street-address">太子堂１丁目１２−２３</span></p>
+    </div>
+    <p id="copyright">&copy;2013-2015 Natakara Pilates. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

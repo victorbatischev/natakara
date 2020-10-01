@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<title>{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage} {block:PostSummary} {PostSummary} /  {/block:PostSummary}{/block:PermalinkPage} Natakara Pirates</title>
+<meta http-equiv="Content-Script-type" content="text/javascript">
+<meta http-equiv="Content-Style-type" content="text/css">
+<meta name="keywords" content="NATAKARA PILATES,ナタカラ,ピラティス{block:PermalinkPage} {block:PostSummary} ,{PostSummary}  {/block:PostSummary}{/block:PermalinkPage}" />
+<meta name="description" content="東京世田谷区にあるピラティススタジオNatakara Pilatesの{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage} のページです" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+
+<meta name="text:Disqus Shortname" content="" />
+<!-- OGP  -->
+<meta property="og:title" content="{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage} {block:PostSummary} {PostSummary} /  {/block:PostSummary} NATAKARA PILATES">
+<meta property="og:description" content="世田谷区にあるピラティススタジオNatakara Pilatesの{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{block:PostSummary}{PostSummary}{/block:PostSummary}{/block:PermalinkPage} のページです">
+<meta property="og:type" content="website">
+<!-- / OGP -->
+<link rel="stylesheet" href="http://natakara.net/common/css/style.css" media="screen, projection, tv, print">
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var topBtn = $('#pageTop');	
+	topBtn.hide();
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 150) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	//スクロールしてトップ
+    topBtn.click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+    });
+	$('a[href^=#]').click(function(){
+        var speed = 800;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+</script>
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-528db8f5461eb7aa"></script>
+
+<script type="text/javascript">
+  addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+      'position' : 'left', 'numPreferredServices' : 6
+    }, 
+    'follow' : {
+      'services' : [
+        {'service': 'facebook', 'id': 'natakara.pilates'}
+      ]
+    },  
+    'whatsnext' : {}  
+  });
+</script>
+<!-- AddThis Smart Layers END -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53892-34', 'natakara.net');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<div id="container">
+  <header> {block:PermalinkPage}
+    <p id="logo"><a href="http://www.natakara.net/index.html"><img src="http://natakara.net/common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></a> </p>
+    {/block:PermalinkPage}
+    {block:IndexPage}
+    <h1 id="logo"><img src="http://natakara.net/common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></h1>
+    {/block:IndexPage}
+    　
+    <nav>
+       <ul>
+        <li><a href="http://natakara.net/about/index.html"><img src="../common/images/gnav01_en.gif" width="80" height="51" alt="About Us"/></a></li>
+        <li><a href="../lesson/index.html"><img src="../common/images/gnav05_en.gif" width="134" height="51" alt="Sessions Details"/></a></li>
+        <li><a href="../plan/index.html"><img src="../common/images/gnav02_en.gif" width="155" height="51" alt="Schedule and Fees"/></a></li>
+        <li><a href="../studio/index.html"><img src="../common/images/gnav04_en.gif" width="71" height="51" alt="Location"/></a></li>
+        <li><a href="../faq/index.html"><img src="../common/images/gnav03_en.gif" width="51" height="51" alt="Policy"/></a></li>
+        <li><a href="../contact/index.php"><img src="../common/images/gnav06_en.gif" width="92" height="51" alt="Contact Us"/></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="mainArea">
+    <div id="mainContent"> {block:Posts}
+      <section id="post-{PostID}" class="contents post {block:Text}post-type-text{/block:Text}{block:Photo}post-type-photo{/block:Photo}{block:Photoset}post-type-photoset{/block:Photoset}{block:Quote}post-type-quote{/block:Quote}{block:Link}post-type-link{/block:Link}{block:Chat}post-type-chat{/block:Chat}{block:Video}post-type-video{/block:Video}{block:Audio}post-type-audio{/block:Audio}">
+        <div class="post-meta">
+          <div class="type"> <a href="{Permalink}">{block:Text}Text{/block:Text}{block:Photo}Photo{/block:Photo}{block:Photoset}Photoset{/block:Photoset}{block:Quote}Quote{/block:Quote}{block:Link}Link{/block:Link}{block:Chat}Chat{/block:Chat}{block:Video}Video{/block:Video}{block:Audio}Audio{/block:Audio}</a> </div>
+          <!-- .type --> 
+          
+          {block:Date}
+          <div class="date"> {Month} {DayOfMonthWithZero}, {Year} </div>
+          <!-- .date --> 
+          
+          {/block:Date}
+          
+          {block:IfDisqusShortname}
+          <div class="comments"> <a href="{Permalink}#disqus_thread">0 comments</a> </div>
+          {/block:IfDisqusShortname}
+          
+          {block:NoteCount}
+          <div class="note-count"> <a href="{Permalink}#notes">{NoteCountWithLabel}</a> </div>
+          <!-- .note-count --> 
+          
+          {/block:NoteCount} </div>
+        <!-- .post-meta -->
+        
+        <div class="post-content"> {block:Text}
+          
+          {block:Title}
+          {block:PermalinkPage}<h1><a href="{Permalink}">{Title}</a></h1>{/block:PermalinkPage}
+          {block:IndexPage}<h2><a href="{Permalink}">{Title}</a></h2>{/block:IndexPage}
+          {/block:Title}
+          
+          {Body}
+          
+          {/block:Text}
+          
+          {block:Photo}
+          
+          {LinkOpenTag}<img src="{PhotoURL-500}" class="photo" alt="{PhotoAlt}" />{LinkCloseTag}
+          
+          {block:HighRes}<a href="{PhotoURL-HighRes}" class="high-res" target="_blank"></a>{/block:HighRes}
+          
+          {block:Caption}
+          <div class="caption">{Caption}</div>
+          {/block:Caption}
+          
+          {/block:Photo}
+          
+          {block:Photoset}
+          
+          {Photoset-500}
+          
+          {block:Caption}
+          <div class="caption">{Caption}</div>
+          {/block:Caption}
+          
+          {/block:Photoset}
+          
+          {block:Quote}
+          <div class="quote-content">"{Quote}"</div>
+          {block:Source}
+          <p class="quote-source">&mdash;【転載元】 {Source}</p>
+          {/block:Source}
+          
+          {/block:Quote}
+          
+          {block:Link}
+          <div class="link-wrap"><a href="{URL}" {Target}>{Name}</a></div>
+          {block:Description}
+          <div class="description">{Description}</div>
+          {/block:Description}
+          
+          {/block:Link}
+          
+          {block:Chat}
+          
+          {block:Title}
+          {block:PermalinkPage}<h1><a href="{Permalink}">{Title}</a></h1>{/block:PermalinkPage}
+          {block:IndexPage}<h2><a href="{Permalink}">{Title}</a></h2>{/block:IndexPage}
+          {/block:Title}
+          <ul class="chat-wrap">
+            {block:Lines}
+            <li class="{Alt} user_{UserNumber}"> {block:Label}<span class="label">{Label}</span>{/block:Label}
+              
+              {Line} </li>
+            {/block:Lines}
+          </ul>
+          {/block:Chat}
+          
+          {block:Video}
+          <div class="video-wrap">{Video-500}</div>
+          {block:Caption}
+          <div class="caption">{Caption}</div>
+          {/block:Caption}
+          
+          {/block:Video}
+          
+          {block:Audio}
+          <div class="audio-wrap">{AudioPlayerGrey}</div>
+          {block:Caption}
+          <div class="caption">{Caption}</div>
+          {/block:Caption}
+          
+          {/block:Audio}
+          
+          {block:HasTags}
+          <div class="tags">
+            <p>Tags: {block:Tags}<a href="{TagURL}" class="single-tag">{Tag}</a> {/block:Tags}</p>
+          </div>
+          {/block:HasTags} </div>
+        <!-- post-content --> 
+        
+      </section>
+      <!-- .post --> 
+      
+      {block:IfDisqusShortname}{block:Permalink}
+      <div id="disqus_thread"></div>
+      <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
+      <noscript>
+      <a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">View the discussion thread.</a>
+      </noscript>
+      {/block:Permalink}{/block:IfDisqusShortname}
+      
+      {block:PostNotes}
+      <div id="post-notes">{PostNotes}</div>
+      {/block:PostNotes}
+      
+      {/block:Posts} </div>
+    <div id="subContent">
+      <div class="contents">
+         <p><a href="http://www.natakara.net/archive"><img src="http://natakara.net/common/images/banner_whatsnew.jpg" width="240" height="192" alt="ピラティス見学会/体験会"/></a></p>
+        <p><a href="http://natakara.net/lesson/trial.html"><img src="http://natakara.net/common/images/banner_trial.jpg" width="240" height="120" alt="ピラティス見学会/体験会"/></a></p>
+        <p><a href="http://natakara.net/studio/index.html"><img src="http://natakara.net/common/images/banner_studio.jpg" width="241" height="100" alt="ピラティススタジオ"/></a></p>
+      </div>
+      <div class="contents" id="gCalendar">
+      <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=400&amp;wkst=2&amp;hl=ja&amp;bgcolor=%23FFFFFF&amp;src=l7e65ss4hanbrvs1ntfbk3ijdc%40group.calendar.google.com&amp;color=%236B3304&amp;ctz=Asia%2FTokyo" style=" border-width:0 " width="240" height="400" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="contents" id="facebook">
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fnatakara.pilates&amp;width=240&amp;height=500&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=272395409456858" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:500px;" allowtransparency="true"></iframe>
+      </div>
+    </div>
+  </div>
+  <p id="pageTop"><a href="#container">ページの先頭へ</a></p>
+</div>
+<footer>
+  <div id="fooerBody">
+    <div class="vcard">
+      <p class="fn"><a href="/"><img src="http://natakara.net/common/images/logo_footer.gif" width="184" height="74" alt="ナタカラ ピラティス - Natakara Pilates"/></a></p>
+      <p class="adr"><span class="postal-code">〒214-0014</span><br>
+        <span class="region">川崎市</span><span class="locality">多摩区</span><span class="street-address">登戸 1813</span></p><span class="tel">TEL: 080-6625-6351</span>
+      <p>  
+    </div>
+    <p id="copyright">&copy;2013-2019 Natakara Pilates. All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

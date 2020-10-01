@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/*
+===== NOTES ========
+	
+	last-updated: 2013.11.27
+	
+====================
+*/
+
+
+header h1#logo {
+	margin:0 0 10px 0;
+	padding:0;
+}
+
+body#topPage{
+	background-image: url(../images/bg_bodytop.gif);
+	background-repeat: repeat-x;
+}
+
+body#topPage header {
+	height: 665px;
+	margin-bottom: 20px;
+}
+body#topPage header nav {
+	width: 750px;
+	height: 67px;
+	margin-left: 140px;
+	margin-bottom: 20px;
+}
+
+body#topPage header p#btnBlog {
+	text-align: center;
+	margin-left: 400px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+body#topPage header p#btnBlog a {
+	background-color: #1b7cc9;
+	display: block;	text-decoration: none;
+	color: #fff;
+	width: 150px;
+	padding-top: 15px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 15px;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-indent: 0;
+}
+body#topPage header p#btnBlog a:hover {
+	text-decoration: none;
+	background-color: #F1B731;
+}

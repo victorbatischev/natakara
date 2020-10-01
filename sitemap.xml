@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://natakara.net/</loc>
+  <lastmod>2019-07-31T08:23:49+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://natakara.net/about/index.html</loc>
+  <lastmod>2019-08-23T06:49:30+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/about/index.html</loc>
+  <lastmod>2019-08-23T07:09:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://natakara.net/about/</loc>
+  <lastmod>2019-08-23T06:49:30+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/lesson/index.html</loc>
+  <lastmod>2019-08-23T06:56:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/plan/index.html</loc>
+  <lastmod>2019-08-23T06:59:52+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/studio/index.html</loc>
+  <lastmod>2019-08-23T07:02:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/faq/index.html</loc>
+  <lastmod>2019-08-23T07:03:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/contact/index.php</loc>
+  <lastmod>2019-08-28T02:41:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/lesson/index.html</loc>
+  <lastmod>2019-08-23T07:11:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/plan/index.html</loc>
+  <lastmod>2019-08-23T07:13:18+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/studio/index.html</loc>
+  <lastmod>2019-08-23T07:15:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/faq/index.html</loc>
+  <lastmod>2019-08-23T07:16:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/contact/index.html</loc>
+  <lastmod>2019-08-23T07:18:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://natakara.net/ja/contact/entry.html</loc>
+  <lastmod>2019-07-11T10:31:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

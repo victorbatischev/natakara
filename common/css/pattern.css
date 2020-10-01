@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+/*
+
+===== CONTENT =====
+
+	last-updated: 2013.10.18
+
+	+1: Leyout Pattern Set
+	+2: Leyout Pattern : Left 
+	+3: Leyout Pattern : Right
+	+4: explanatory note
+
+====================
+
+*/
+
+/* ==================================================  
+	+1: Leyout Pattern Set
+================================================== */
+.boxSet:after,#mainArea:after { content: "."; clear: both; height: 0; visibility: hidden; display: block; }
+
+.boxSet ,#mainArea {
+	clear: both;
+	float: none;
+	display: inline-block;
+	margin-bottom: 0px;
+	width:100%;
+}
+
+/* Hides from IE-mac \*/
+* html .boxSet,* html .mainArea { zoom:1; height: 1%; }
+.boxSet: ,#mainArea { display: block; }
+
+/* End hide from IE-mac */
+
+
+/* ================================================== 
+ 	+2: Leyout Pattern : left
+================================================== */
+.boxLeft070 { width: 70px; float: left; }
+
+.boxLeft090 { width: 90px; float: left; }
+
+.boxLeft100 { width: 100px; float: left; }
+
+.boxLeft110 { width: 110px; float: left; }
+
+.boxLeft120 { width: 120px; float: left; }
+
+.boxLeft130 { width: 130px; float: left; }
+
+.boxLeft138 { width: 138px; float: left; }
+
+.boxLeft140 { width: 140px; float: left; }
+
+.boxLeft150 { width: 150px; float: left; }
+
+.boxLeft160 { width: 160px; float: left; }
+
+.boxLeft170 { width: 170px; float: left; }
+
+.boxLeft175 { width: 175px; float: left; }
+
+.boxLeft180 { width: 180px; float: left; }
+
+.boxLeft190 { width: 190px; float: left; }
+
+.boxLeft195 { width: 195px; float: left; }
+
+.boxLeft200 { width: 200px; float: left; }
+
+.boxLeft205 { width: 205px; float: left; }
+
+.boxLeft210 { width: 210px; float: left; }
+
+.boxLeft217 { width: 217px; float: left; }
+
+.boxLeft220 { width: 220px; float: left; }
+
+.boxLeft225 { width: 225px; float: left; }
+
+.boxLeft230 { width: 230px; float: left; }
+
+.boxLeft240 { width: 240px; float: left; }
+
+.boxLeft250 { width: 250px; float: left; }
+
+.boxLeft260 { width: 260px; float: left; }
+
+.boxLeft270 { width: 270px; float: left; }
+
+.boxLeft280 { width: 280px; float: left; }
+
+.boxLeft290 { width: 290px; float: left; }
+
+.boxLeft296 { width: 296px; float: left; }
+
+.boxLeft300 { width: 300px; float: left; }
+
+.boxLeft305 { width: 305px; float: left; }
+
+.boxLeft310 { width: 310px; float: left; }
+
+.boxLeft315 { width: 315px; float: left; }
+
+.boxLeft320 { width: 320px; float: left; }
+
+.boxLeft330 { width: 330px; float: left; }
+
+.boxLeft335 { width: 335px; float: left; }
+
+.boxLeft340 { width: 340px; float: left; }
+
+.boxLeft345 { width: 345px; float: left; }
+
+.boxLeft350 { width: 350px; float: left; }
+
+.boxLeft360 { width: 360px; float: left; }
+
+.boxLeft370 { width: 370px; float: left; }
+
+.boxLeft375 { width: 375px; float: left; }
+
+.boxLeft380 { width: 380px; float: left; }
+
+.boxLeft385 { width: 385px; float: left; }
+
+.boxLeft390 { width: 390px; float: left; }
+
+.boxLeft400 { width: 400px; float: left; }
+
+.boxLeft410 { width: 410px; float: left; }
+
+.boxLeft420 { width: 420px; float: left; }
+
+.boxLeft430 { width: 430px; float: left; }
+
+.boxLeft435 { width: 435px; float: left; }
+
+.boxLeft440 { width: 440px; float: left; }
+
+.boxLeft450 { width: 450px; float: left; }
+
+.boxLeft454 { width: 454px; float: left; }
+
+.boxLeft460 { width: 460px; float: left; }
+
+.boxLeft469 { width: 469px; float: left; }
+
+.boxLeft470 { width: 470px; float: left; }
+
+.boxLeft480 { width: 480px; float: left; }
+
+.boxLeft490 { width: 490px; float: left; }
+
+.boxLeft500 { width: 500px; float: left; }
+
+.boxLeft510 { width: 510px; float: left; }
+
+.boxLeft515 { width: 515px; float: left; }
+
+.boxLeft520 { width: 520px; float: left; }
+
+.boxLeft530 { width: 530px; float: left; }
+
+.boxLeft532 { width: 532px; float: left; }
+
+.boxLeft540 { width: 540px; float: left; }
+
+.boxLeft550 { width: 550px; float: left; }
+
+.boxLeft560 { width: 560px; float: left; }
+
+.boxLeft565 { width: 560px; float: left; }
+
+.boxLeft570 { width: 570px; float: left; }
+
+.boxLeft580 { width: 580px; float: left; }
+
+.boxLeft590 { width: 590px; float: left; }
+
+.boxLeft595 { width: 595px; float: left; }
+
+.boxLeft600 { width: 600px; float: left; }
+
+.boxLeft610 { width: 610px; float: left; }
+
+.boxLeft620 { width: 620px; float: left; }
+
+/* ================================================== 
+ 	+3: Leyout Pattern : right
+================================================== */
+
+.boxRight090 { width: 90px; float: right; }
+
+.boxRight100 { width: 100px; float: right; }
+
+.boxRight110 { width: 110px; float: right; }
+
+.boxRight120 { width: 120px; float: right; }
+
+.boxRight130 { width: 130px; float: right; }
+
+.boxRight138 { width: 138px; float: right; }
+
+.boxRight140 { width: 140px; float: right; }
+
+.boxRight150 { width: 150px; float: right; }
+
+.boxRight160 { width: 160px; float: right; }
+
+.boxRight170 { width: 170px; float: right; }
+
+.boxRight175 { width: 175px; float: right; }
+
+.boxRight180 { width: 180px; float: right; }
+
+.boxRight190 { width: 190px; float: right; }
+
+.boxRight195 { width: 195x; float: right; }
+
+.boxRight200 { width: 200px; float: right; }
+
+.boxRight205 { width: 205px; float: right; }
+
+.boxRight210 { width: 210px; float: right; }
+
+.boxRight217 { width: 217px; float: right; }
+
+.boxRight220 { width: 220px; float: right; }
+
+.boxRight225 { width: 225px; float: right; }
+
+.boxRight230 { width: 230px; float: right; }
+
+.boxRight240 { width: 240px; float: right; }
+
+.boxRight250 { width: 250px; float: right; }
+
+.boxRight260 { width: 260px; float: right; }
+
+.boxRight270 { width: 270px; float: right; }
+
+.boxRight280 { width: 280px; float: right; }
+
+.boxRight290 { width: 290px; float: right; }
+
+.boxRight296 { width: 296px; float: right; }
+
+.boxRight300 { width: 300px; float: right; }
+
+.boxRight310 { width: 310px; float: right; }
+
+.boxRight315 { width: 315px; float: right; }
+
+.boxRight320 { width: 320px; float: right; }
+
+.boxRight330 { width: 330px; float: right; }
+
+.boxRight335 { width: 335px; float: right; }
+
+.boxRight340 { width: 340px; float: right; }
+
+.boxRight344 { width: 344px; float: right; }
+
+.boxRight350 { width: 350px; float: right; }
+
+.boxRight360 { width: 360px; float: right; }
+
+.boxRight370 { width: 370px; float: right; }
+
+.boxRight375 { width: 375px; float: right; }
+
+.boxRight380 { width: 380px; float: right; }
+
+.boxRight385 { width: 385px; float: right; }
+
+.boxRight390 { width: 390px; float: right; }
+
+.boxRight400 { width: 400px; float: right; }
+
+.boxRight410 { width: 410px; float: right; }
+
+.boxRight415 { width: 415px; float: right; }
+
+.boxRight420 { width: 420px; float: right; }
+
+.boxRight430 { width: 430px; float: right; }
+
+.boxRight435 { width: 435px; float: right; }
+
+.boxRight440 { width: 440px; float: right; }
+
+.boxRight450 { width: 450px; float: right; }
+
+.boxRight454 { width: 454px; float: right; }
+
+.boxRight458 { width: 458px; float: right; }
+
+.boxRight460 { width: 460px; float: right; }
+
+.boxRight469 { width: 469px; float: right; }
+
+.boxRight470 { width: 470px; float: right; }
+
+.boxRight480 { width: 480px; float: right; }
+
+.boxRight490 { width: 490px; float: right; }
+
+.boxRight500 { width: 500px; float: right; }
+
+.boxRight510 { width: 510px; float: right; }
+
+.boxRight515 { width: 515px; float: right; }
+
+.boxRight520 { width: 520px; float: right; }
+
+.boxRight530 { width: 530px; float: right; }
+
+.boxRight532 { width: 532px; float: right; }
+
+.boxRight540 { width: 540px; float: right; }
+
+.boxRight550 { width: 550px; float: right; }
+
+.boxRight560 { width: 560px; float: right; }
+
+.boxRight565 { width: 565px; float: right; }
+
+.boxRight570 { width: 570px; float: right; }
+
+.boxRight580 { width: 580px; float: right; }
+
+.boxRight590 { width: 590px; float: right; }
+
+.boxRight595 { width: 595px; float: right; }
+
+.boxRight600 { width: 600px; float: right; }
+
+.boxRight612 { width: 612px; float: right; }
+
+.boxRight620 { width: 620px; float: right; }
+
+/* ================================================== 
+ 	+4: explanatory note
+================================================== */
+
+/* Pattern clear
+================================================== */
+
+.clear { clear: both; float: none; }
+
+/* clearFix
+================================================== */
+.clearFix:after { content: "."; clear: both; height: 0; visibility: hidden; display: block; }
+
+.clearFix { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearFix { zoom:1; height: 1%; }
+
+.clearFix { display: block; }/* End hide from IE-mac */
+
+/* ad hoc class
+================================================== */
+
+#mainArea .alignRight { text-align: right; }
+
+#mainArea .alignCenter { text-align: center; }
+
+#mainArea .alignLeft { text-align: left; }
+
+#mainArea .font10 { font-size: 10px; }
+
+#mainArea .font11 { font-size: 11px; }
+
+#mainArea .font12 { font-size: 12px; }
+
+#mainArea .font13 { font-size: 13px; }
+
+#mainArea .font14 { font-size: 14px; }
+
+#mainArea .font16 { font-size: 16px; }
+
+#mainArea .font18 { font-size: 18px; }
+
+#mainArea .contents .marginB0 { margin-bottom: 0; }
+
+#mainArea .contents .marginB10 { margin-bottom: 10px; }
+
+#mainArea .contents .marginB15 { margin-bottom: 15px; }
+
+#mainArea .contents .marginB20 { margin-bottom: 20px; }
+
+#mainArea .contents .marginB25 { margin-bottom: 25px; }
+
+#mainArea .contents .marginB30 { margin-bottom: 30px; }
+
+#mainArea .contents .marginB35 { margin-bottom: 35px; }
+
+#mainArea .contents .marginB40 { margin-bottom: 40px; }
+
+#mainArea .contents .marginB45 { margin-bottom: 45px; }
+
+#mainArea .contents .marginB50 { margin-bottom: 50px; }
+
+#mainArea .contents .marginB55 { margin-bottom: 55px; }
+
+#mainArea .contents .marginB60 { margin-bottom: 60px; }
+
+#mainArea .contents .marginB65 { margin-bottom: 65px; }
+
+#mainArea .contents .marginR30 { margin-right: 30px; }
+
+#mainArea .contents h2 span.subH2 {
+	font-size: small;
+}
+
+/* pageTop link
+================================================== */
+#mainArea p#pageTop {
+	margin-left: 490px;
+	clear: both;
+	margin-bottom: 30px;
+}
+
+#mainArea p#pageTop a { padding-top:2px; }
+
+#mainArea .lineBottom { border-bottom: 1px solid #88b556; }
+
+
+/* ================================================== 
+ 	+5: mobile max640px
+================================================== */
+
+@media only screen and (max-width:640px) {
+.boxLeft070,.boxLeft090,.boxLeft100,.boxLeft110,.boxLeft120,.boxLeft130,.boxLeft138,.boxLeft140,.boxLeft150,.boxLeft160,.boxLeft170,.boxLeft175,.boxLeft180,.boxLeft190,.boxLeft195,.boxLeft200,.boxLeft205,.boxLeft210,.boxLeft217,.boxLeft220,.boxLeft230,.boxLeft240,.boxLeft250,.boxLeft260,.boxLeft270,.boxLeft280,.boxLeft290,.boxLeft296,.boxLeft300,.boxLeft305,.boxLeft310,.boxLeft315,.boxLeft320,.boxLeft330,.boxLeft335,.boxLeft340,.boxLeft345,.boxLeft350,.boxLeft360,.boxLeft370,.boxLeft375,.boxLeft380,.boxLeft385,.boxLeft390,.boxLeft400,.boxLeft410,.boxLeft420,.boxLeft430,.boxLeft435,.boxLeft440,.boxLeft450,.boxLeft454,.boxLeft460,.boxLeft469,.boxLeft470,.boxLeft480,.boxLeft490,.boxLeft500,.boxLeft510,.boxLeft520,.boxLeft530,.boxLeft532,.boxLeft540,.boxLeft550,.boxLeft560 ,.boxLeft565,.boxLeft570 ,.boxLeft580,.boxLeft590,.boxLeft595,.boxLeft600 ,.boxLeft612, .boxLeft620,
+.boxRight090,.boxRight100,.boxRight110,.boxRight120,.boxRight130,.boxRight138,.boxRight140,.boxRight150,.boxRight160,.boxRight170,.boxRight175,.boxRight180,.boxRight190,.boxRight195,.boxRight200,.boxRight205,.boxRight210,.boxRight217,.boxRight220,.boxRight230,.boxRight240,.boxRight250,.boxRight260,.boxRight270,.boxRight280,.boxRight290,.boxRight296,.boxRight300,.boxRight310,.boxRight315,.boxRight320,.boxRight330,.boxRight335,.boxRight340,.boxRight344,.boxRight350,.boxRight360,.boxRight370,.boxRight375,.boxRight380,.boxRight385,.boxRight390,.boxRight400,.boxRight410,.boxRight415,.boxRight420,.boxRight430,.boxRight435,.boxRight440,.boxRight450,.boxRight454,.boxRight458,.boxRight460,.boxRight469,.boxRight470,.boxRight480,.boxRight490,.boxRight500,.boxRight510,.boxRight520,.boxRight530,.boxRight532,.boxRight540,.boxRight550,.boxRight560,.boxRight565,.boxRight570,.boxRight580,.boxRight590,.boxRight595,.boxRight600,.boxRight612,.boxRight620
+{ width: 100%; float: none; }
+}
