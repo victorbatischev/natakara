@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+
+<html lang="ja" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>レッスン予約（Lesson reservation）</title>
+<meta http-equiv="Content-Script-type" content="text/javascript">
+<meta http-equiv="Content-Style-type" content="text/css">
+<meta name="keywords" content="NATAKARA PILATES,ナタカラ,ピラティス,入会予約,体験,ご予約" />
+<meta name="description" content="NATAKARA PILATESのご予約" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+
+<!-- OGP  -->
+
+<meta property="og:title" content="NATAKARA PILATESのご予約">
+<meta property="og:description" content="NATAKARA PILATESのご予約">
+<meta property="og:type" content="website">
+
+<!-- / OGP -->
+
+<style type="text/css">
+<!--
+ @charset "UTF-8";
+
+html { overflow-y: scroll; }
+
+/* body
+
+=============================================== */
+
+body {
+	color: #666;
+	font-size: 14px;
+	font-family: "メイリオ'" Meiryo, "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro, "MS Pゴシック", Osaka, Helvetica, Arial, sans-serif;
+	padding: 0;
+	text-align: center;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	cursor: default;
+	background-color: #FFF;
+	background-image: url(http://natakara.net/images/bg_body.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+/* for WinIE6*/
+
+* html body {
+	letter-spacing: 1px;
+	font-size: 13px;
+	font-family: Verdana, "MS P ゴシック", sans-serif;
+}
+
+* html td, * html th {
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/* for WinIE7*/
+
+
+
+*:first-child+html body {
+	font-size: 75%;
+	font-family: "メイリオ", Meiryo, sans-serif;
+}
+
+/* Elements
+
+=============================================== */
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td {
+	padding: 0;
+	font-size: small;
+	margin-left: auto;
+	margin-right: auto;
+	color: #8EA761;
+}
+
+ul, ol, dl { margin-bottom: 10px; }
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset, img { list-style-type: none; }
+
+address, caption, cite, code, dfn, em, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+em {
+	font-weight: bold;
+	color: #2F1C0E;
+}
+
+strong {
+	font-weight: bold;
+	color: #CC6E14;
+}
+
+caption, th { text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+	color: #494949;
+	margin: 0;
+}
+
+hr { display: none; }
+
+q:before, q:after { content: ''; }
+
+abbr, acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup, sub { font-size: 9px; }
+
+sup {
+	vertical-align: super;
+	color: #CC6A20;
+}
+
+sub { vertical-align: text-bottom; }
+
+sup em { color: #6C615B; }
+
+input, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	vertical-align: middle;
+}
+
+a:link { color: #719d12; }
+
+a:hover {
+	color: #3690CD;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+	vertical-align: bottom;
+}
+
+a:hover img {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+}
+
+#container {
+	width: 980px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	text-align: left;
+}
+
+#mainContent .contents dl.contactTel dd {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	font-size: large;
+}
+
+header {
+	height: 145px;
+	width: 980px;
+	position: relative;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 60px;
+	padding: 0;
+}
+
+header p {
+	margin: 0;
+	padding: 0;
+}
+
+header #logo { margin-bottom: 10px; }
+
+header img { vertical-align: top; }
+
+header nav {
+	position: relative;
+	width: 980px;
+	height: 51px;
+}
+
+header nav ul {
+	width: 940px;
+	height: 51px;
+	margin-top: 0;
+	margin-right: 0px;
+	margin-left: 0px;
+	margin-bottom: 0;
+}
+
+header nav ul li {
+	float: left;
+	list-style-type: none;
+	margin-right: 30px;
+}
+
+#keyvisual { height: 339px; }
+
+p#crumb {
+	margin-top: 0;
+	margin-bottom: 40px;
+	padding-top: 5px;
+}
+
+#mainArea {
+	width: 980px;
+	position: relative;
+	margin: 0;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+}
+
+#mainArea #subContent {
+	width: 240px;
+	float: right;
+}
+
+#mainContent {
+	width: 700px;
+	float: left;
+	border-top: 5px double #D9D9D9;
+}
+
+#mainContent h1 {
+	color: #1273C0;
+	font-size: x-large;
+	margin-bottom: 50px;
+	text-shadow: 1px 2px #DBDBDB;
+	font-weight: bold;
+}
+
+#mainContent .contents { margin-bottom: 50px; }
+
+#mainContent .contents h2 {
+	font-size: medium;
+	border-bottom: 1px solid #6c6c6c;
+	color: #6c6c6c;
+	margin-bottom: 20px;
+	font-weight: bold;
+	padding-bottom: 3px;
+	background-image: url(../images/bg_h2.gif);
+	background-repeat: no-repeat;
+	padding-left: 10px;
+	background-position: left 3px;
+}
+
+#mainContent .contents h3 {
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFFFFF;
+	background-color: #8A8D1B;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#mainContent .contents p {
+	margin-bottom: 25px;
+	line-height: 1.5;
+}
+
+#mainContent .contents ul {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#mainContent .contents ol {
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+/* table degin bese */
+
+
+
+#mainContent .contents table {
+	border-collapse: separate;
+	border-spacing: 0;
+	empty-cells: show;
+	font-size: small;
+	border-spacing: 1px;
+	color: #456214;
+	margin-bottom: 20px;
+}
+
+html>body #mainContent .contents table { border-collapse: separate; }
+
+#mainContent .contents table caption {
+	border: #666;
+	border-bottom: 2px solid #666;
+	text-transform: uppercase;
+	padding: 5px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#mainContent .contents table th { font-weight: bold; }
+
+#mainContent .contents table.table01 { background-color: #8EA761; }
+
+#mainContent .contents table.table01 caption { border-bottom: 2px solid #999; }
+
+#mainContent .contents table.table01 th, #mainContent .contents table.table01 td {
+	color: #333;
+	padding: 10px 5px;
+	border: 1px solid #FFF;
+	background: #FFF;
+}
+
+#mainContent .contents table.table01 th { background-color: #EDF7DC; }
+
+#mainContent .contents table.table01 tr.fst th {
+	background-color: #6A9421;
+	color: #FFF;
+}
+
+#mainContent .contents table.table01 tr.tableTR th {
+	background-color: #728D47;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#mainContent .contents table.table01 td { color: #EDF7DC; }
+
+#mainContent .contents table.table01 tr.odd td { background: #EDF7DC; }
+
+#mainContent .contents table.table01 td.group {
+	background-color: #D97863;
+	color: #F4F4F4;
+	text-align: center;
+}
+
+#mainContent .contents table.table01 td.private {
+	background-color: #6A4DC0;
+	color: #FFF;
+	text-align: center;
+}
+
+#subContent .contents h2 {
+	font-size: medium;
+	background-color: #808080;
+	border-bottom: 5px solid #cd870c;
+	color: #FFFFFF;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#subContent .contents dl {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+#subContent .contents dl dt { margin-bottom: 5px; }
+
+#subContent .contents dl dd {
+	margin-left: 13px;
+	margin-bottom: 15px;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	background-color: #353535;
+	color: #FFF;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+footer .footerBody { width: 960px; }
+
+footer .footerBody .boxSet {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	text-align: left;
+}
+
+footer .footerBody .boxSet h2 {
+	color: #FFF;
+	border-bottom-color: #FFF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	margin-bottom: 10px;
+}
+
+footer .footerBody .boxSet p { margin-left: 20px; }
+
+#mainArea .contents h2 a { color: #FFFFFF; }
+
+#mainContent #turnUp {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+#event #mainContent { width: 960px; }
+
+#event #mainContent .contents .boxSet { width: 960px; }
+
+#mainContent .contents .post .info {
+	border-top: 1px solid hsla(0,0%,73%,1.00);
+	padding-top: 10px;
+	margin-bottom: 30px;
+}
+
+footer #fooerBody {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+footer #fooerBody .vcard .fn { float: left; }
+
+footer #fooerBody .vcard .adr {
+	float: right;
+	text-align: right;
+}
+
+footer p#copyright {
+	clear: both;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#mainContent .contents ul.navLesson {
+	position: relative;
+	margin-left: 20px;
+}
+
+#mainContent .contents ul.navLesson li {
+	width: 200px;
+	height: 60px;
+	float: left;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+#mainContent .contents ul.navLesson li a {
+	background-color: #D4E6F7;
+	display: block;
+	text-align: center;
+	margin-left: px;
+	left: 20px;
+	right: 20px;
+	top: 5px;
+	bottom: 5px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	-webkit-box-shadow: 1px 1px #195690;
+	box-shadow: 1px 1px #195690;
+	border-radius: 5px;
+	color: #2274C1;
+	border: 1px solid #3781C6;
+	text-decoration: none;
+}
+
+#mainContent .contents .navLesson li.btn a {
+	-webkit-box-shadow: 3px 3px 3px #634C16;
+	box-shadow: 3px 3px 3px #634C16;
+}
+
+#mainContent .contents .navLesson li.btn a:hover {
+	-webkit-box-shadow: 0px 0px 0px #FFF;
+	box-shadow: 0px 0px 0px #FFF;
+	margin-left: 1px;
+}
+
+#mainContent .contents dl.faqDL {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#mainContent .contents dl.accessRoute {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+#mainContent .contents dl.accessRoute dt {
+	font-size: large;
+	margin-bottom: 5px;
+}
+
+#mainContent .contents dl.accessRoute dd {
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+
+#mainContent .contents p.fn { margin-left: 20px; }
+
+#mainContent .contents p.btn {
+	margin-left: 230px;
+	margin-right: 230px;
+	font-size: large;
+	margin-bottom: 150px;
+}
+
+#subContent .contents p.btn {
+	font-size: large;
+	margin-bottom: 20px;
+}
+
+#mainContent .contents p.btn a, #subContent .contents p.btn a {
+	text-decoration: none;
+	width: 240px;
+	padding-top: 15px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 15px;
+	text-align: center;
+	display: block;
+	color: #F7F7F7;
+	background-color: #BF932B;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 3px #634C16;
+	box-shadow: 3px 3px 3px #634C16;
+}
+
+#mainContent .contents p.btn a:hover, #subContent .contents p.btn a:hover {
+	color: #F7F7F7;
+	-webkit-box-shadow: 0px 0px 0px #FFF;
+	box-shadow: 0px 0px 0px #FFF;
+	margin-left: 1px;
+}
+
+body #pageTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 77%;
+}
+
+body #pageTop a {
+	background-color: #353535;
+	;
+	text-decoration: none;
+	color: #fff;
+	width: 150px;
+	padding-top: 25px;
+	padding-right: 0;
+	padding-left: 0;
+	padding-bottom: 25px;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-indent: 0;
+}
+
+body #pageTop a:hover {
+	text-decoration: none;
+	background-color: #F1B731;
+}
+
+#event #mainContent .contents .boxSet p { font-variant: normal; }
+
+#mainContent .contents dl.faqDL dt {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	color: #2173C0;
+	font-weight: bold;
+	font-size: small;
+	border-top: 1px solid #1E71C2;
+	border-bottom: 1px solid #1E71C2;
+	border-right: 1px solid #1E71C2;
+	border-left: 10px solid #1E71C2;
+}
+
+#mainContent .contents dl.faqDL dd {
+	margin-bottom: 20px;
+	margin-left: 20px;
+	line-height: 1.3;
+}
+
+.post-meta:after {
+	content: ".";
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display: block;
+}
+
+.post-meta {
+	clear: both;
+	float: none;
+	display: inline-block;
+	margin-bottom: 20px;
+	width: 700px;
+	position: relative;
+	border-bottom: 1px solid #D9D9D9;
+}
+
+/* Hides from IE-mac \*/
+
+* html .post-meta {
+	zoom: 1;
+	height: 1%;
+}
+ .post-meta: {
+display: block;
+}
+
+/* End hide from IE-mac */
+
+#mainContent .post-meta .date {
+	float: left;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#mainContent .post-meta .type {
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#mainContent .post-type-video .post-meta .type { border-bottom: 2px solid #CE3458; }
+
+#mainContent .post-type-link .post-meta .type { border-bottom: 2px solid #CE3458; }
+
+#mainContent .post-type-quote .post-meta .type { border-bottom: 2px solid #CE3458; }
+
+#mainContent .post-type-photoset .post-meta .type { border-bottom: 2px solid #CE3458; }
+
+#mainContent .post-type-photo .post-meta .type { border-bottom: 2px solid #CE3458; }
+
+#mainContent .post-type-text .post-meta .type { border-bottom: 2px solid #CE3458; }
+
+#mainContent .contents h2 a { color: #2173C0; }
+
+#subContent .contents { margin-bottom: 20px; }
+
+#mainContent .contents table th a { color: #384F12; }
+
+#mainContent .contents dl.contactTel { margin-left: 20px; }
+
+#mainContent .contents dl.contactTel dt {
+	font-size: large;
+	margin-bottom: 5px;
+}
+
+p.logo table.xf_block {
+	border: 1px solid;
+	border-width: 1px 1px 0 0;
+	margin-top: 10px;
+}
+
+th.xf_table_title, th.xf_field {
+	border: 1px solid;
+	border-width: 0 0 1px 1px;
+	padding: 3px 5px;
+}
+
+td.xf_input, td.xf_explain {
+	border: 1px solid;
+	border-width: 0 0 1px 1px;
+	padding: 3px 5px;
+}
+-->
+</style>
+</head>
+</head>
+
+<body>
+<div id="container">
+<header>
+<p id="logo"><a href="http://natakara.net/about/"><img src="http://natakara.net/common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></a></p>
+<nav>
+<ul>
+<li><a href="http://natakara.net/about/index.html"><img src="http://natakara.net/common/images/gnav01.gif" width="172" height="51" alt="ナタカラピラティスとは"/></a></li>
+<li><a href="http://natakara.net/plan/index.html"><img src="http://natakara.net/common/images/gnav02.gif" width="160" height="51" alt="入会案内/料金プラン"/></a></li>
+<li><a href="http://natakara.net/faq/index.html"><img src="http://natakara.net/common/images/gnav03.gif" width="97" height="51" alt="よくある質問"/></a></li>
+<li><a href="http://natakara.net/studio/index.html"><img src="http://natakara.net/common/images/gnav04.gif" width="131" height="51" alt="スタジオについて"/></a></li>
+<li><a href="http://natakara.net/lesson/index.html"><img src="http://natakara.net/common/images/gnav05.gif" width="98" height="51" alt="レッスン紹介"/></a></li>
+<li><a href="http://natakara.net/contact/index.html"><img src="http://natakara.net/common/images/gnav06.gif" width="100" height="51" alt="お問い合わせ"/></a></li>
+</ul>
+</nav>
+</header>
+<div id="mainArea">
+<div id="mainContent">
+<h1>ご予約</h1>
+<section class="contents">
+<style type="text/css">
+<!--
+  th.xf_field { background-color:#EDF7DC; }
+
+  td.xf_input { background-color:#FFFFFF; }
+
+  td.xf_explain { background-color:#FFFFFF; }
+
+
+
+  th.xf_field { color:#424242; }
+
+
+  td.xf_explain { color:#333333; }
+
+  th.xf_table_title { color:#3089CC; }
+
+
+
+
+
+  .xf_block0 { text-align:center; }
+
+
+
+  .xf_block1 { text-align:center; }
+
+
+
+  .xf_block2 { text-align:center; }
+
+
+  span.xf_essential { margin-left:10px; }
+  .xf_block { margin-bottom:10px; }
+-->
+</style>
+<form action="https://fs223.formasp.jp/q368/form1/index.cgi" method="post">
+<div class="xf_block xf_block0"> 必要情報を入力してください。なお<font color="#FF9900">※</font>のあるものは必須項目となります。 </div>
+<table class="xf_block" border="1" cellpadding="5" cellspacing="0" align="center" bordercolor="#8EA761">
+<tr>
+<th class="xf_table_title" colspan="2" bordercolor="#8EA761"> レッスン予約（Lesson reservation） </th>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> レッスン選択（Lesson）<span class="xf_essential">※</span> </th>
+<td class="xf_input" bordercolor="#8EA761"><select id="input36" name="input36" size="1">
+<option value="---Please choose---">---Please choose---</option>
+<option value="マット体験（Mat-Trial-）">マット体験（Mat-Trial-）</option>
+<option value="マシーン体験（Machine-Trial-）">マシーン体験（Machine-Trial-）</option>
+<option value="プライベート(Private Lesson) 予約[Mon] ">プライベート(Private Lesson) 予約[Mon] </option>
+<option value="プライベート(Private Lesson) 予約[Wed]">プライベート(Private Lesson) 予約[Wed]</option>
+<option value="プライベート(Private Lesson) 予約[Thu]">プライベート(Private Lesson) 予約[Thu]</option>
+<option value="プライベート(Private Lesson) 予約[Fri]">プライベート(Private Lesson) 予約[Fri]</option>
+<option value="プライベート(Private Lesson) 予約[Sat]">プライベート(Private Lesson) 予約[Sat]</option>
+<option value="セミプライベートレッスン(Semi-private Lesson) 予約">セミプライベートレッスン(Semi-private Lesson) 予約</option>
+<option value="グループ(Group Lesson) 予約[Mon] ">グループ(Group Lesson) 予約[Mon] </option>
+<option value="グループ(Group Lesson) 予約[Wed]">グループ(Group Lesson) 予約[Wed]</option>
+<option value="グループ(Group Lesson) 予約[Thu]">グループ(Group Lesson) 予約[Thu]</option>
+<option value="グループ(Group Lesson) 予約[Fri]">グループ(Group Lesson) 予約[Fri]</option>
+<option value="グループ(Group Lesson) 予約[Sat]">グループ(Group Lesson) 予約[Sat]</option>
+</select></td>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> お名前（Name）<span class="xf_essential">※</span> </th>
+<td class="xf_input" bordercolor="#8EA761"><input id="input8" type="text" name="input8" value=""></td>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> フリガナ（Furigana） </th>
+<td class="xf_input" bordercolor="#8EA761"><input id="input9" type="text" name="input9" value="">
+カタカナで記入ください。
+
+kana over or beside kanji to indicate pronunciation </td>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> メールアドレス (E-mail)<span class="xf_essential">※</span> </th>
+<td class="xf_input" bordercolor="#8EA761"><input id="input30" type="text" name="input30" value=""></td>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> メールアドレス（確認用）<span class="xf_essential">※</span> </th>
+<td class="xf_input" bordercolor="#8EA761"><input id="input31" type="text" name="input31" value="">
+&nbsp;念のため、もう一度入力してください。 </td>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> お電話番号（TEL） </th>
+<td class="xf_input" bordercolor="#8EA761"><input id="input35" type="text" name="input35" value="" size="50">
+&nbsp;例) 03-1234-5678 </td>
+</tr>
+<tr>
+<th class="xf_field" width="180" bordercolor="#8EA761"> コメント（Comment） </th>
+<td class="xf_input" bordercolor="#8EA761"><textarea id="input13" name="input13" cols="45" rows="10"></textarea></td>
+</tr>
+</table>
+<br clear="all">
+<div class="xf_block xf_block1">
+<input type="submit" value="Enter">
+<input type="reset" value="クリア">
+</div>
+<div class="xf_block xf_block2"> 入力内容をご確認の上、宜しければ送信ボタンを押してください。 </div>
+<input type="hidden" name="act" value="confirm">
+</form>
+</section>
+</div>
+<div id="subContent">
+<p><a href="http://natakara.net/archive"><img src="http://natakara.net/common/images/banner_whatsnew.jpg" width="240" height="192" alt=" What's New"/></a></p>
+<p class="btn"><a href="http://natakara.net/contact/entry.html">ご予約はこちら<br>
+Reserve </a></p>
+<p><a href="http://natakara.net/lesson/trial.html"><img src="http://natakara.net/common/images/banner_trial.jpg" width="240" height="120" alt="ピラティス見学会/体験会"/></a></p>
+<p><a href="http://natakara.net/studio/index.html"><img src="http://natakara.net/common/images/banner_studio.jpg" width="241" height="100" alt="ピラティススタジオ"/></a></p>
+</div>
+<div class="contents" id="facebook">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fnatakara.pilates&width=240&height=500&colorscheme=light&show_faces=true&header=true&stream=false&show_border=true&appId=272395409456858" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:500px;" allowTransparency="true"></iframe>
+</div>
+</div>
+</div>
+<p id="pageTop"><a href="#container">↑Go to top</a></p>
+</div>
+<footer>
+<div id="fooerBody">
+<div class="vcard">
+<p class="fn"><a href="http://natakara.net/"><img src="http://natakara.net/common/images/logo_footer.gif" width="184" height="74" alt="ナタカラ ピラティス - Natakara Pilates"/></a></p>
+<p class="adr"><span class="postal-code">〒154-0004</span><br>
+<span class="region">東京都</span><span class="locality">世田谷区</span><span class="street-address">太子堂１丁目１２－２３</span></p>
+</div>
+<p id="copyright">&copy;2013-2015 Natakara Pilates. All Rights Reserved.</p>
+</div>
+</footer>
+</body>
+</html>

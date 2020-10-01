@@ -401,6 +401,7 @@ footer #fooerBody .vcard .fn {
 footer #fooerBody .vcard .adr {
 	float: right;
 	text-align: right;
+	padding-bottom: 20px;
 }
 
 footer p#copyright {

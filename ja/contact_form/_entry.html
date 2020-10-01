@@ -1,22 +1,22 @@
-﻿<!DOCTYPE html>
-<html lang="ja" xmlns:og="https://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <head>
 <meta charset="UTF-8">
-<title>レッスン紹介 / NATAKARA PILATES</title>
+<title>Reservation / NATAKARA PILATES</title>
 <meta http-equiv="Content-Script-type" content="text/javascript">
 <meta http-equiv="Content-Style-type" content="text/css">
-<meta name="keywords" content="NATAKARA PILATES,ナタカラ,ピラティス,レッスン,紹介" />
-<meta name="description" content="NATAKARA PILATESのレッスン紹介" />
+<meta name="keywords" content="NATAKARA PILATES,ナタカラ,ピラティス,入会予約,体験会,ご予約" />
+<meta name="description" content="NATAKARA PILATESの入会予約・体験会のご予約" />
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
 <!-- OGP  -->
-<meta property="og:title" content="NATAKARA PILATESのレッスン紹介">
-<meta property="og:description" content="NATAKARA PILATESのレッスン紹介">
+<meta property="og:title" content="NATAKARA PILATESの入会予約・体験会のご予約">
+<meta property="og:description" content="NATAKARA PILATESの入会予約・体験会のご予約">
 <meta property="og:type" content="website">
 <!-- / OGP -->
-<link rel="stylesheet" href="../../common/css/style.css" media="screen, projection, tv, print">
+<link rel="stylesheet" href="../common/css/style.css" media="screen, projection, tv, print">
 <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script type="text/javascript">
 $(function(){
     var topBtn = $('#pageTop');	
@@ -76,33 +76,42 @@ $(function(){
 </head>
 
 <body>
-<div id="container"><!-- #BeginLibraryItem "/Library/nav.lbi" --><header>
-    <p id="logo"><a href="../about/index.html"><img src="../../common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></a> </p>
+<div id="container">
+  <header>
+    <p id="logo"><a href="http://natakara.net/about/"><img src="../common/images/logo.gif" width="184" height="85" alt="ナタカラ ピラティス"/></a></p>
     <ul id="langIcon">
-    <li><a href="https://blog.natakara.net/"><img src="https://natakara.net/common/images/icon_blog.gif" width="30" height="20" alt="English to page"/></a></li>
-    <li lang="en"><a href="https://natakara.net/about/index.html"><img src="https://natakara.net/common/images/icon_en.gif" width="30" height="20" alt="English to page"/></a></li>
-    <li lang="ja"><a href="https://natakara.net/ja/about/index.html"><img src="https://natakara.net/common/images/icon_ja.gif" width="30" height="20" alt="日本語ページへ"/></a></li>
-    <li lang="ru"><img src="https://natakara.net/common/images/icon_ru.gif" width="30" height="20" alt="Для российского странице"/></li>
-    </ul>
-    <nav>
-<ul>
-        <li><a href="../about/index.html"><img src="../../common/images/gnav01.gif" width="175" height="51" alt="ナタカラピラティスとは"/></a></li>
-        <li><a href="../lesson/index.html"><img src="../../common/images/gnav05.gif" width="98" height="51" alt="レッスン紹介"/></a></li>
-        <li><a href="../plan/index.html"><img src="../../common/images/gnav02.gif" width="180" height="51" alt="入会案内/料金プラン"/></a></li>
-        <li><a href="../studio/index.html"><img src="../../common/images/gnav04.gif" width="130" height="51" alt="スタジオについて"/></a></li>
-        <li><a href="../faq/index.html"><img src="../../common/images/gnav03.gif" width="50" height="51" alt="よくある質問"/></a></li>
-        <li><a href="../contact_form/index.php"><img src="../../common/images/gnav06.gif" width="100" height="51" alt="お問い合わせ"/></a></li>
+    <li><a href="http://blog.natakara.net/"><img src="http://natakara.net/common/images/icon_blog.gif" width="30" height="20" alt="English to page"/></a></li>
+    <li lang="en"><a href="http://natakara.net/about/index.html"><img src="http://natakara.net/common/images/icon_en.gif" width="30" height="20" alt="English to page"/></a></li>
+    <li lang="ja"><a href="http://natakara.net/ja/about/index.html"><img src="http://natakara.net/common/images/icon_ja.gif" width="30" height="20" alt="日本語ページへ"/></a></li>
+    <li lang="ru"><img src="http://natakara.net/common/images/icon_ru.gif" width="30" height="20" alt="Для российского странице"/></li>
+    </ul><!-- #BeginLibraryItem "/Library/nav_en.lbi" --><nav id="enNav">
+      <ul>
+        <li><a href="../about/index.html"><img src="../common/images/gnav01_en.gif" width="80" height="51" alt="About Us"/></a></li>
+        <li><a href="../plan/index.html"><img src="../common/images/gnav02_en.gif" width="159" height="51" alt="Guidance and Fees"/></a></li>
+        <li><a href="../faq/index.html"><img src="../common/images/gnav03_en.gif" width="43" height="51" alt="Frequently Asked Questions"/></a></li>
+        <li><a href="../studio/index.html"><img src="../common/images/gnav04_en.gif" width="121" height="51" alt="Studio Access"/></a></li>
+        <li><a href="../lesson/index.html"><img src="../common/images/gnav05_en.gif" width="223" height="51" alt="Introduction of the lesson"/></a></li>
+        <li><a href="index.html"><img src="../common/images/gnav06_en.gif" width="69" height="51" alt="Contact"/></a></li>
       </ul>
-    </nav>
-  </header><!-- #EndLibraryItem --><div id="mainArea">
+    </nav><!-- #EndLibraryItem --></header>
+  <div id="mainArea">
     <div id="mainContent">
-      <h1>レッスン紹介</h1>
+      <h1>Reservation</h1>
       <section class="contents">
-        <p>ナタカラピラティスでは、３つのレッスンをご用意しています。<br>
-        &raquo;&nbsp;<a href="https://blog.natakara.net/archive">レッスンのスケジュールについては、What's Newの最新スケジュール表をご覧をください。</a></p>
-        <!--<div id="schedule">
-        <span style="color:#F493E7;">■</span>＝Group lesson　/ <span style="color:#70A2CA;">■</span>＝Machine　Private lesson / <span style="color:#F49D89;">■</span>＝Volunteer Lesson</p>
-          <table width="100%" border="0" class="table01">
+        <blockquote>
+          <p id="entry">If you make a reservation or you perform a lesson of an experience-based meeting, <br>
+          visit, you come by notification in &quot;telephone&quot; or &quot;e-mail&quot;.</p>
+        </blockquote>
+<h2>連絡先</h2>
+        <dl class="contactTel">
+          <dt><strong>Nataliya Karasawa </strong></dt>
+<dd><span class="tel"><a href="tel:08066256351">080-6625-6351</a></span><br> 
+  <a href="mailto:nine-seven8@mail.ru?subject=Contact from website">nine-seven8@mail.ru </a></dd>
+        </dl>
+<!--<h2 class="clear">スケジュール表</h2>
+      <p><span style="color:#F493E7;">■</span>＝Group lesson　/ <span style="color:#70A2CA;">■</span>＝Machine　Private lesson / <span style="color:#F49D89;">■</span>＝Volunteer Lesson</p>
+        <div id="schedule">
+          <table width="700" border="0" class="table01">
             <caption>
               8/1〜8/2
             </caption>
@@ -172,32 +181,32 @@ $(function(){
               8/3〜8/9
             </caption>
             <tr class="tableTR">
-              <th width="85" scope="col">&nbsp;</th>
-              <th width="83" scope="col">8/3<br>
+              <th scope="col">&nbsp;</th>
+              <th scope="col">8/3<br>
                 (Sun)</th>
-              <th width="83" scope="col">8/4<br>
+              <th scope="col">8/4<br>
                 (Mon)</th>
-              <th width="83" scope="col">8/5<br>
+              <th scope="col">8/5<br>
                 (Tue)</th>
-              <th width="83" scope="col">8/6<br>
+              <th scope="col">8/6<br>
                 (Wed)</th>
-              <th width="83" scope="col">8/7<br>
+              <th scope="col">8/7<br>
                 (Thu)</th>
-              <th width="83" scope="col">8/8<br>
+              <th scope="col">8/8<br>
                 (Fri)</th>
-              <th width="83" scope="col">8/9<br>
+              <th scope="col">8/9<br>
                 (Sat)</th>
             </tr>
             <tr>
-              <th scope="row">09:45<br>
+              <th width="85" scope="row">09:45<br>
                 〜19:45</th>
-              <td>&nbsp;</td>
-              <td class="group">G<br></td>
-              <td>&nbsp;</td>
-              <td>&nbsp;</td>
-              <td class="group">G</td>
-              <td class="group">G</td>
-              <td>&nbsp;</td>
+              <td width="83">&nbsp;</td>
+              <td width="83" class="group">G<br></td>
+              <td width="83">&nbsp;</td>
+              <td width="83">&nbsp;</td>
+              <td width="83" class="group">G</td>
+              <td width="83" class="group">G</td>
+              <td width="83">&nbsp;</td>
             </tr>
             <tr>
               <th scope="row">11:00<br>
@@ -254,11 +263,11 @@ $(function(){
                 (Sat)</th>
             </tr>
             <tr>
-              <th scope="row">09:45<br>
+              <th width="83" scope="row">09:45<br>
                 〜19:45</th>
               <td>&nbsp;</td>
               <td class="group">G<br></td>
-              <td>&nbsp;</td>
+              <td >&nbsp;</td>
               <td>&nbsp;</td>
               <td class="group">G</td>
               <td class="group">G</td>
@@ -301,8 +310,8 @@ $(function(){
             <caption>
               8/17〜8/23
             </caption>
-            <tr class="tableTR">
-              <th width="85" scope="col">&nbsp;</th>
+            <tr width="85" class="tableTR">
+              <th width="83" scope="col">&nbsp;</th>
               <th width="83" scope="col">8/17<br>
                 (Sun)</th>
               <th width="83" scope="col">8/18<br>
@@ -367,10 +376,10 @@ $(function(){
               8/24〜8/30
             </caption>
             <tr class="tableTR">
-              <th width="85" scope="col">&nbsp;</th>
+              <th  width="85" scope="col">&nbsp;</th>
               <th width="83" scope="col">8/2<br>
                 (Sun)</th>
-              <th width="83" scope="col">8/25<br>
+              <th  width="83"scope="col">8/25<br>
                 (Mon)</th>
               <th width="83" scope="col">8/26<br>
                 (Tue)</th>
@@ -427,75 +436,39 @@ $(function(){
               <td class="group">G</td>
             </tr>
           </table>
-        </div>-->
-        <h2 id="groupLesson">グループレッスン</h2>
-        <div class="boxSet">
-          <div class="boxLeft400">
-            <p><img src="../../lesson/images/img_lesson_01.jpg" width="340" height="227" alt=""/></p>
-            <p align="left">ピラティスの基礎クラスです。 </p>
-            <p align="left">ピラティスを続けていくためにマスターしておかなければならない正しい胸式呼吸、骨盤の動かし方、そして理想的な姿勢など学んでゆくクラスになっています。 <br>
-              ピラティスを行っていく上での注意すべき点なども学べ、負担なく身体を動かす方法を基礎から習っていきます。 </p>
-            <p>&raquo;&nbsp;<a href="../plan/index.html">入会方法と料金について</a></p>
-            <p>&nbsp;</p>
-          </div>
-          <div class="boxRight250" >
-            <p><img src="../../lesson/images/img_lesson_01_2.jpg" width="245" height="366" alt=""/></p>
-          </div>
-        </div>
-        <p>&nbsp;</p>
+</div>-->
+      
       </section>
-      <section class="contents">
-        <h2 id="semi-privateLesson">セミプライベートレッスン</h2>
-        <div class="boxSet">
-          <div class="boxLeft400">
-            <p align="left">お友達やお仲間などの少人数で目的や身体の特徴に合わせたコアなレッスンを行います。仲良し通しですので気兼ねなくトレーナーと一緒にレッスンも行えるのが特徴です。グループの基礎講座とちがって目的と内容に合わせた応用などの本格的なレッスンになります。 <br>
-              アスリートやダンサーなど、特定の部分などを鍛えたい人にオススメです。 </p>
-            <p>&raquo;&nbsp;<a href="../plan/index.html">入会方法と料金について</a></p>
-            <p>&nbsp;</p>
-          </div>
-          <div class="boxRight250">
-            <p><img src="../../lesson/images/img_lesson_02.jpg" width="245" height="369" alt=""/></p>
-          </div>
-        </div>
-      </section>
-      <section class="contents">
-        <h2 id="privateLesson">プライベートレッスン</h2>
-        <div class="boxSet">
-          <div class="boxLeft340">
-            <p><img src="../../lesson/images/img_lesson_03.jpg" width="340" height="227" alt=""/></p>
-          </div>
-          <div class="boxRight340">
-            <p><img src="../../lesson/images/img_lesson_03_2.jpg" width="340" height="228" alt=""/></p>
-          </div>
-          <p class="clear">完全にプライベートで行うレッスンです。 <br>
-            基礎から応用までをワンツーマンで徹底的に身体を鍛えていくレッスンになります。 <br>
-            他人がいると集中できない、他人の目が気になるといった方などにはオススメです。 </p>
-          <p>&raquo;&nbsp;<a href="../plan/index.html">入会方法と料金について</a></p>
-        </div>
-      </section>
-    </div><!-- #BeginLibraryItem "/Library/subContent_ja.lbi" --><div id="subContent">
+      <!--<section class="contents">
+        <p id="entry">体験会に参加、もしくは、入会をご希望の方は以下フォームよりご記入ください。<br>
+      お送りいただいた内容を確認しまして、スタッフより体験会、もしくは、入会手続きについてのご連絡をいたします。<br>
+      ご不明な点などございましたら、【備考欄】にその旨をご記入ください。<br>
+        ※送信から１週間経っても返答がない場合は、お手数ではございますが直接（）までご連絡ください。</p>
+      <p><iframe src="https://docs.google.com/forms/d/1v-IS61LcPhj6AY87btmCDSlkpbOMGJWsADRFuzQ2d3A/viewform?embedded=true" width="700" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込み中...</iframe></p>
+    </section>-->
+    </div><!-- #BeginLibraryItem "/Library/subContent_en.lbi" --><div id="subContent">
       <div class="contents">
-        <p><a href="https://blog.natakara.net/"><img src="../../common/images/banner_whatsnew.jpg" width="240" height="250" alt=" What's New"/></a></p>
-        <p><a href="../contact/entry.html"><img src="../../common/images/banner_trial_ja.jpg" width="240" height="107" alt="ピラティス見学会/体験会"/></a></p>
-        <p><a href="../studio/index.html"><img src="../../common/images/banner_studio.jpg" width="241" height="100" alt="ピラティススタジオ"/></a></p>
+        <p><a href="http://blog.natakara.net/archive"><img src="../common/images/banner_whatsnew.jpg" width="240" height="250" alt=" What's New"/></a></p>
+        <p><a href="entry.html"><img src="../common/images/top.jpg" width="240" height="107" alt="Reservation of PILATES"/></a></p>
+        <p><a href="../studio/index.html"><img src="../common/images/banner_studio.jpg" width="241" height="100" alt="Studio Access"/></a></p>
       </div>
       <div class="contents" id="facebook">
         <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fnatakara.pilates&amp;width=240&amp;height=500&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true&amp;appId=272395409456858" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:240px; height:500px;" allowtransparency="true"></iframe>
       </div>
     </div><!-- #EndLibraryItem --></div>
-  <p id="pageTop"><a href="#container">ページの先頭へ</a></p>
+<p id="pageTop"><a href="#container">↑Go to top</a></p>
 </div>
 <footer>
   <div id="fooerBody">
     <div class="vcard">
-      <p class="fn"><a href="/"><img src="https://natakara.net/common/images/logo_footer.gif" width="184" height="74" alt="ナタカラ ピラティス - Natakara Pilates"/></a></p>
-      <p class="adr"><span class="postal-code">〒214-0014</span><br>
-        <span class="region">川崎市</span><span class="locality">多摩区</span><span class="street-address">登戸 1813,&nbsp</span>2F<br>
-        
+      <p class="fn"><a href="/"><img src="http://natakara.net/common/images/logo_footer.gif" width="184" height="74" alt="ナタカラ ピラティス - Natakara Pilates"/></a></p>
+      <p class="adr"><span class="postal-code">〒154-0004</span><br>
+        <span class="region">東京都</span><span class="locality">世田谷区</span><span class="street-address">太子堂1丁目12-23</span>第一ゴールドビル 3F<br>
+        No1 Gold BL 3F,Taishido1-12-23,Setagaya-ku,Tokyo,Japan.<br>
         <span class="tel">TEL: 080-6625-6351</span>
-      <p>  
+      <p> 
     </div>
-    <p id="copyright">&copy;2013-2020 Natakara Pilates. All Rights Reserved.</p>
+    <p id="copyright">&copy;2013-2015 Natakara Pilates. All Rights Reserved.</p>
   </div>
 </footer>
 </body>
